@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board CRM</title>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="container">
+            <a href="#" class=""> 
+                <img class="logo" src="./src/assets/board-crm-logo.svg" alt="logo">
+            </a>
+
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#features" class="nav-link">Функционал</a></li>
+                <li class="nav-item"><a href="#form-builder" class="nav-link">Конструктор форм</a></li>
+                <li class="nav-item"><a href="#import-export" class="nav-link">Импорт / Экспорт</a></li>
+                <li class="nav-item"><a href="#realtime" class="nav-link">Realtime</a></li>
+                <li class="nav-item"><a href="#pricing" class="nav-link">Тарифы</a></li>
+            </ul>
+
+            <div class="actions">
+                <div class="langs">
+                    <button class="lang-btn" id="langToggler">
+                        ru
+                    </button>
+                    <ul class="lang-list" id="langList">
+                        <li><a href="#">Русский</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Український</a></li>
+                    </ul>
+                </div>
+                <button class="nav-btn">
+                    Попробовать
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>Простая онлайн CRM для автоматизации дел</h1>
+                <p class="header-detail">подходит для разных типов деятельности</p>
+                <div class="cta-main">
+                    <a href="" class="cta-main-link">Попробовать</a>
+                </div>
+                <div class="download-apps">
+                    <a class="app-link" href="">
+                        <img src="./src/assets/google-play-badge.png" alt="google play">
+                    </a>
+                    <a class="app-link" href="">
+                        <img src="./src/assets/apple-store-badge.png" alt="apple store">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features">
+        <div class="container">
+            <div class="features-content">
+                <h2>Сохраните все свои сделки в BoardCRM</h2>
+                <ul class="feature-list">
+                    <li class="list-item">
+                        <img src="./src/assets/profile.svg" alt="Иконка профиля" class="feature-icon">
+                        <p class="feature-text">
+                            Ведите свою клиентскую базу в удобном сервисе
+                        </p>
+                    </li>
+                    <li class="list-item">
+                        <img src="./src/assets/mail-icon.svg" alt="Иконка нового письма" class="feature-icon">
+                        <p class="feature-text">
+                            Планируйте задачи и ставьте напоминания
+                        </p>
+                    </li>
+                    <li class="list-item">
+                        <img src="./src/assets/mailbox-icon.svg" alt="Иконка почтового ящика" class="feature-icon">
+                        <p class="feature-text">
+                            Создавайте формы сбора заявок и отправляйте их клиентам
+                        </p>
+                    </li>
+                </ul>
+                <h2>CRM-система для тех, кто устал от сложностей</h2>
+                <ul class="feature-badges">
+                    <li class="badge-item">
+                        <div class="badge-img half">
+                            <img src="./src/assets/feature-one.svg" alt="Иконка фичи 1">
+                        </div>
+                        <div class="badge-content half">
+                            <h3>Был негативный опыт работы с другими системами?</h3>
+                            <p class="badge-text">Забудьте все что у вас было ДО. BoardCRM простая и удобная система нового поколения для ИП, самозанятых и малого бизнеса</p>
+                            <a href="" class="badge-link">Заказать настройку CRM</a>
+                        </div>
+                    </li>
+                    <li class="badge-item"> 
+                        <div class="badge-content half">
+                            <h3>Не смогли разобраться с CRM или было слишком сложно?</h3>
+                            <p class="badge-text">Не тратьте время на изучение курсов по использованию различных CRM, несколько простых шагов помогут вам начать работу с BoardCRM</p>
+                            <a href="" class="badge-link">Нужна помощь</a>
+                        </div>
+                        <div class="badge-img half">
+                            <img src="./src/assets/feature-two.svg" alt="Иконка фичи 2">
+                        </div>
+                    </li>
+                    <li class="badge-item">
+                        <div class="badge-img half">
+                            <img src="./src/assets/feature-three.svg" alt="Иконка фичи 3">
+                        </div>
+                        <div class="badge-content half">
+                            <h3>А может слишком дорого...</h3>
+                            <p class="badge-text">До 150 активных сделок на бесплатном тарифе — без ограничений по времени или премиум тариф по доступной цене с бесконечным числом сделок</p>
+                            <div class="cta-main">
+                                <a href="" class="cta-main-link">Попробовать</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <h2>Быстрый старт</h2>
+                <p class="badge-text half center">
+                    CRM-система с простым набором функций, не требующая обучения
+                </p>
+                <ul class="feature-list second-list">
+                    <li class="list-item">
+                        <img src="./src/assets/rocket-icon.svg" alt="Иконка ракеты" class="feature-icon">
+                        <p class="feature-text">
+                            Высокая производительность в режиме Realtime
+                        </p>
+                    </li>
+                    <li class="list-item">
+                        <img src="./src/assets/wallet-icon.svg" alt="Иконка кошелька" class="feature-icon">
+                        <p class="feature-text">
+                            Бесплатный тариф без ограничений
+                        </p>
+                    </li>
+                    <li class="list-item">
+                        <img src="./src/assets/arrow-icon.svg" alt="Иконка стрелочки" class="feature-icon">
+                        <p class="feature-text">
+                            Импорт данных с других CRM в один клик
+                        </p>
+                    </li>
+                    <li class="list-item">
+                        <img src="./src/assets/user-icon.svg" alt="Иконка пользователя" class="feature-icon">
+                        <p class="feature-text">
+                            Работа с несколькими сотрудниками одновременно
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="form-builder">
+        <div class="container form-container">
+            <div class="form-builder-wrapper">
+                <div class="form-builder-content"> 
+                    <h2>Онлайн форма за 7 минут</h2>
+                    <div class="badge-text">
+                        Форма заявок — это еще один источник сбора клиентов. Создайте простую форму и расположите ее на сайте или отправьте уникальный URL в любую социальную сеть, все данные автомтически поступают в BoardCRM
+                    </div>
+                    <div class="cta-main">
+                        <a href="" class="cta-main-link">Создать форму</a>
+                    </div>
+                    <img src="./src/assets/cone.svg" alt="Картинка конуса" class="cone-icon">
+                </div>
+            </div>
+            <div class="form-builder-example">
+                <div class="form-body">
+                    <img src="./src/assets/close-icon.svg" class="close-icon" alt="закрыть форму">
+
+                    <h3>Заказ обратного звонка</h3>
+                    <div class="input-placeholder"></div>
+                    <div class="input-field">
+                        <div class="input-text">E-mail</div>
+                    </div>
+                    <div class="input-field">
+                        <div class="input-text">Телефон</div>
+                    </div>
+                    <div class="input-placeholder"></div>
+                    <div class="input-field">
+                        <div class="input-text">Комментарий</div>
+                    </div>
+                    <button class="form-btn">
+                        Отправить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="import-export">
+        <div class="container">
+            <div class="import-export-content">
+                <h2>Встроенный механизм переноса данных</h2>
+                <div class="import-export-inner">
+                    <img src="./src/assets/import-export-img.svg" alt="Картнка: импорт/экспорт">
+                    <div class="tab-ie-wrapper">
+
+                        <div class="tabs">
+                            <div class="tab-links">
+                                <div class="import-export__tab one">
+                                    <a class="tab-link" href="" id="importTab">
+                                        Импорт
+                                    </a>
+                                </div>
+                                <div class="import-export__tab two">
+                                    <a class="tab-link" href="" id="exportTab">
+                                        Экспорт
+                                    </a>
+                                </div>
+                            
+                                <div class="underline" id="underline"></div>
+                            </div>
+
+                            <div class="tab-content tab-active" id="importTabContent">
+                                <p class="tab-content__text">С помощью одного Excel файла можно перенести всю вашу базу данных клиентов и сделок с любой другой CRM-системы к нам. <br><br> Сделайте это самостоятельно импортируя файл одним нажатием кнопки или воспользуйтесь помощью нашей службы поддержки.</p>
+                            
+                            </div>
+    
+                            <div class="tab-content" id="exportTabContent">
+                                <p class="tab-content__text">Выгрузка всех клиентов и сделок в удобном формате для использования базы за пределами BoardCRM. </p>
+                                
+                            </div>
+                            <div class="tab-actions">
+                                <div class="cta-main">
+                                    <a href="" class="cta-main-link">Переезжаем</a>
+                                </div>
+                                <div class="cta-secondary">
+                                    <a href="" class="cta-secondary-link">Настроить бесплатно</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="realtime">
+        <div class="realtime-container">
+                <div class="realtime-wrapper">
+                    <h2>Realtime</h2>
+                    <p class="badge-text">
+                        Работайте одновременно с несколькими сотрудниками в одной CRM, отслеживайте изменение информации о клиентах и заказах в режиме реального времени
+                    </p>
+                    <div class="cta-main">
+                        <a href="" class="cta-main-link">Попробовать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="pricing">
+        <div class="pricing-content">
+            <h2>Доступные тарифы</h2>
+            <div class="pricing-tabs">
+                <div class="pricing-tabs__links">
+                    <div class="pricing__tab one">
+                        <a class="tab-link" href="" id="threeMonthTab">
+                            3 месяца
+                        </a>
+                    </div>
+                    <div class="pricing__tab tab-discount two">
+                        <a class="tab-link" href="" id="sixMonthTab">
+                            6 месяца
+                        </a>
+                    </div>
+                    <div class="pricing__tab tab-discount three">
+                        <a class="tab-link" href="" id="twelveMonthTab">
+                            12 месяцев
+                        </a>
+                    </div>
+
+                    <div class="underline-pricing" id="pricingUnderline"></div>
+                </div>
+                <div class="tab-content tab-active" id="threeMonthContent">
+                    <div class="tab-content-wrapper">
+                        <div class="pledge-card">
+                            <div class="card-title">
+                                Начальный тариф
+                            </div>
+                            <div class="price">
+                                0<span class="currency">₽</span>
+                            </div>
+                            <ul class="perk-list">
+                                <li class="perk-item">1 доска</li>
+                                <li class="perk-item">1 пользователь</li>
+                                <li class="perk-item">до 5 этапов воронки продаж</li>
+                                <li class="perk-item">до 150 активных сделок</li>
+                                <li class="perk-item">до 10 полей в сделке</li>
+                            </ul>
+                            <div class="cta-secondary">
+                                <a href="" class="cta-secondary-link">Попробовать</a>
+                            </div>
+                        </div>
+                        <div class="pledge-card">
+                            <div class="card-title">
+                                Премиум тариф
+                            </div>
+                            <div class="price">
+                                250<span class="currency">₽ </span><span class="period">/ месяц</span> 
+                            </div>
+                            <ul class="perk-list">
+                                <li class="perk-item">5 досок</li>
+                                <li class="perk-item">5 пользователей</li>
+                                <li class="perk-item">до 12 этапов воронки продаж</li>
+                                <li class="perk-item"><img src="./src/assets/infinity.svg" alt="Иконка бесконечности"> активных сделок</li>
+                                <li class="perk-item">до 25 полей в сделке</li>
+                            </ul>
+                            <div class="cta-main">
+                                <a href="" class="cta-main-link">Попробовать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="sixMonthContent">
+                    <div class="tab-content-wrapper">
+                        <div class="pledge-card">
+                            <div class="card-title">
+                                Начальный тариф
+                            </div>
+                            <div class="price">
+                                0<span class="currency">₽</span>
+                            </div>
+                            <ul class="perk-list">
+                                <li class="perk-item">1 доска</li>
+                                <li class="perk-item">1 пользователь</li>
+                                <li class="perk-item">до 5 этапов воронки продаж</li>
+                                <li class="perk-item">до 150 активных сделок</li>
+                                <li class="perk-item">до 10 полей в сделке</li>
+                            </ul>
+                            <div class="cta-secondary">
+                                <a href="" class="cta-secondary-link">Попробовать</a>
+                            </div>
+                        </div>
+                        <div class="pledge-card">
+                            <div class="card-title">
+                                Премиум тариф
+                            </div>
+                            <div class="price">
+                                200<span class="currency">₽ </span><span class="period">/ месяц</span> 
+                            </div>
+                            <ul class="perk-list">
+                                <li class="perk-item">5 досок</li>
+                                <li class="perk-item">5 пользователей</li>
+                                <li class="perk-item">до 12 этапов воронки продаж</li>
+                                <li class="perk-item"><img src="./src/assets/infinity.svg" alt="Иконка бесконечности"> активных сделок</li>
+                                <li class="perk-item">до 25 полей в сделке</li>
+                            </ul>
+                            <div class="cta-main">
+                                <a href="" class="cta-main-link">Попробовать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="twelveMonthContent">
+                    <div class="tab-content-wrapper">
+                        <div class="pledge-card">
+                            <div class="card-title">
+                                Начальный тариф
+                            </div>
+                            <div class="price">
+                                0<span class="currency">₽</span>
+                            </div>
+                            <ul class="perk-list">
+                                <li class="perk-item">1 доска</li>
+                                <li class="perk-item">1 пользователь</li>
+                                <li class="perk-item">до 5 этапов воронки продаж</li>
+                                <li class="perk-item">до 150 активных сделок</li>
+                                <li class="perk-item">до 10 полей в сделке</li>
+                            </ul>
+                            <div class="cta-secondary">
+                                <a href="" class="cta-secondary-link">Попробовать</a>
+                            </div>
+                        </div>
+                        <div class="pledge-card">
+                            <div class="card-title">
+                                Премиум тариф
+                            </div>
+                            <div class="price">
+                                175<span class="currency">₽ </span><span class="period">/ месяц</span> 
+                            </div>
+                            <ul class="perk-list">
+                                <li class="perk-item">5 досок</li>
+                                <li class="perk-item">5 пользователей</li>
+                                <li class="perk-item">до 12 этапов воронки продаж</li>
+                                <li class="perk-item"><img src="./src/assets/infinity.svg" alt="Иконка бесконечности"> активных сделок</li>
+                                <li class="perk-item">до 25 полей в сделке</li>
+                            </ul>
+                            <div class="cta-main">
+                                <a href="" class="cta-main-link">Попробовать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./dist/bundle.js"></script>
+</body>
+</html>
