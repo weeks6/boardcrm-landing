@@ -1,0 +1,60 @@
+@import './shared';
+
+#realtime {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 152px;
+}
+
+.realtime-container {
+    padding-top: 68px;
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    & .badge-text {
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+
+    & .cta-main {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    #realtime {
+        padding-bottom: 124px;
+    }
+
+    .realtime-container {
+        width: 60.5%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    #realtime {
+        padding-bottom: 124px;
+    }
+
+    .realtime-container {
+        width: 78.8%;
+    }
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    #realtime {
+        padding-bottom: 124px;
+    }
+
+    .realtime-container {
+        width: 87.2%;
+    }
+}

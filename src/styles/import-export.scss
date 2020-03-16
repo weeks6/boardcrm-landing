@@ -1,0 +1,107 @@
+@import './shared';
+
+#import-export {
+    display: flex;
+    justify-content: center;
+    padding-top: 189px;
+}
+
+.import-export-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.import-export-inner {
+    margin-top: 77px;
+    margin-bottom: 68px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tab-ie-wrapper {
+    width: 39%;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-links {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.import-export__tab {
+    display: inline-block;
+    text-align: center;
+    height: 44px;
+    border-bottom: #EDEDF1 4px solid;
+    flex: 1;
+    flex-shrink: 0;
+    flex-basis: 50%;
+}
+
+.one {
+    &:hover ~ .underline {
+        transition: all .3s ease-in-out;
+        margin-left: 0 !important;
+    }
+}
+
+.two {
+    &:hover ~ .underline {
+        transition: all .3s ease-in-out;
+        margin-left: 50% !important;
+    }
+}
+
+.underline {
+    transform: translateY(-4px);
+    width: 50%;
+    height: 4px;
+    margin-left: 0;
+    background-color: $color-accent;
+    transition: .3s ease-in-out;
+}
+
+.actions {
+    display: flex;
+}
+
+.tab-link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: $color-heading;
+    font-weight: $font-semibold;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 16px;
+}
+
+.tab-content__text {
+    font-weight: $font-medium;
+    font-size: 18px;
+    line-height: 28px;
+    color: $color-heading;
+}
+
+.tab-content {
+    margin-top: 48px;
+    display: none;
+}
+
+.tab-active {
+    display: block;
+}
+
+.tab-actions {
+    display: flex;
+    margin-top: 40px;
+}

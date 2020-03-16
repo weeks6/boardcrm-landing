@@ -1,0 +1,331 @@
+@import './shared';
+
+#form-builder {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $color-background;
+
+    h2 {
+        text-align: start;
+    }
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-builder-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    .badge-text {
+        width: 64%;
+        margin-bottom: 40px;
+    }
+}
+
+.form-builder-example {
+    width: 50%;
+    margin-top: 88px;
+    margin-bottom: 29px;
+    border-radius: 4px;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 460px;
+    background-color: #fff;
+
+    & h3 {
+        user-select: none;
+        margin-top: 54px;
+        margin-bottom: 32px;
+    }
+
+    &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: 48.61%;
+        right: 28.67%;
+        margin-top: 113px;
+        width: 327.17px;
+        height: 531.36px;
+        background-image: url('../assets/fb-woman.svg');
+    }
+
+    &:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        margin-top: 210px;
+        left: 68.96%;
+        right: 5.02%;
+        width: 374.69px;
+        height: 434px;
+        background-image: url('../assets/fb-man.svg');
+    }
+}
+
+.input-placeholder {
+    background-color: $color-background;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    width: 80%;
+    height: 67px;
+}
+
+.input-field {
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 8px; 
+}
+
+.input-text {
+    user-select: none;
+    font-weight: $font-medium;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-form-text;
+    padding-bottom: 6px;
+    border-bottom: $color-form-text 1px solid; 
+}
+
+.form-btn {
+    width: 80%;
+    height: 48px;
+    padding: 0 32px;
+    margin-top: 24px;
+    margin-bottom: 50px;
+    font-weight: $font-medium;
+    color: $color-accent;
+    background-color: $color-background;
+    border: none;
+    cursor: none;
+    pointer-events: none;
+}
+
+.cone-icon {
+    transform: translate(-220px, 190px);
+}
+
+.close-icon {
+    position: absolute;
+    transform: translate(200px, 15px);    
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    #form-builder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 154px;
+        
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .form-wrapper {
+        flex-direction: column;
+    }
+
+    .form-builder-content {
+        width: 60%;
+        align-items: center;
+        text-align: center;
+
+        .badge-text {
+            width: 100%;
+        }
+
+        .cta-main {
+            margin-right: 0;
+        }
+
+        .cone-icon {
+            display: none;
+        }
+    }
+
+    .form-body {
+
+        &:before {
+            left: 17.58%;
+            right: 50.47%;
+        }
+    
+        &:after {
+            left: 46.19%;
+            right: 17.22%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    #form-builder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 154px;
+        
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .form-wrapper {
+        flex-direction: column;
+    }
+
+    .form-builder-content {
+        width: 80%;
+        align-items: center;
+        text-align: center;
+
+        .badge-text {
+            width: 100%;
+        }
+
+        .cta-main {
+            margin-right: 0;
+        }
+
+        .cone-icon {
+            display: none;
+        }
+    }
+
+    .form-builder-example {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-body {
+
+        &:before {
+            left: 17.58%;
+            right: 50.47%;
+        }
+    
+        &:after {
+            left: 46.19%;
+            right: 17.22%;
+        }
+    }
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    #form-builder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+    
+        h2 {
+            width: 100%;
+            margin-top: 0;
+            text-align: center;
+        }
+    
+        .form-builder-content {
+            width: 100%;
+            align-items: center;
+        
+            .badge-text {
+                width: 100%;
+                text-align: center;
+            }
+    
+            .cta-main {
+                margin-right: 0;
+            }
+        }
+    
+        .form-builder-example {
+            margin-bottom: 23px;
+        }
+    
+        .input-placeholder {
+            height: 33.88px;
+            margin-bottom: 4px;
+        }
+    
+        .input-field {
+            padding-top: 13px;
+            padding-bottom: 12px;
+            margin-bottom: 13px;
+        }
+    
+        .input-text {
+            padding-bottom: 0;
+            font-size: 9px;
+            line-height: 20px;
+        }
+    
+        .form-btn {
+            height: 31.85px;
+            padding: 0 32px;
+            margin-top: 8px;
+            margin-bottom: 27.1px;
+            font-size: 13px;
+            line-height: 22px;
+        }
+    
+        .close-icon {
+            display: none;
+        }
+
+        .mobile-hide {
+            display: none;
+        }
+    }
+
+    .form-wrapper {
+        flex-direction: column;
+    }
+    
+    .form-body {
+        width: 194.47px;
+        border-radius: 4px;
+
+        h3 {
+            height: auto;
+            margin-top: 13px;
+            margin-bottom: 25px;
+            font-size: 12px;
+            line-height: 21px;
+        }
+
+        &:before {
+            width: 220px;
+            height: 338.17px;
+            transform: translate(-160px, -78px);
+            background-repeat: no-repeat;
+            background-image: url('../assets/fb-woman-mobile.svg');
+        }
+
+        &:after {
+            width: 188.38px;
+            height: 288.49px;
+            transform: translate(-100px, -125px);
+            background-repeat: no-repeat;
+            background-image: url('../assets/fb-man-mobile.svg');
+        }
+    }
+}

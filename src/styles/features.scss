@@ -1,0 +1,283 @@
+@import './shared';
+
+#features {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-set-one {
+    width: 79.3%;
+    padding-top: 116px !important;
+}
+
+.feature-set-two {
+    width: 79.3%;
+    padding-top: 163px !important;
+}
+
+.feature-set-three {
+    width: 88.1%;
+    padding-top: 40px !important;
+    padding-bottom: 144px;
+
+    .badge-text {
+        width: 40%;
+        text-align: center;
+    }
+
+    .list-item {
+        text-align: center;
+        width: 23.2%
+    }
+}
+
+.feature-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+
+.f-list-one {
+
+    .list-item {
+        width: 29%;
+        text-align: center;
+    }
+}
+
+.feature-icon {
+    width: 72px;
+    margin-bottom: 24px;
+}
+
+.feature-text {
+    font-weight: $font-semibold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: $color-heading;
+}
+
+.feature-badges {
+    width: 100%;
+    list-style: none;
+    margin-top: 22px;
+    margin-bottom: 71px;
+}
+
+.badge-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+    .badge-img {
+        display: flex;
+    
+        &:nth-child(2) {
+            justify-content: flex-end;
+        }
+    }
+
+    .badge-content {
+        width: 48.8%;
+    }
+
+    .badge-link {
+        font-weight: $font-medium;
+        font-size: 18px;
+        line-height: 28px;
+        padding-bottom: 4px;
+        color: $color-accent-darken;
+        text-decoration: none;
+        border-bottom: $color-accent-darken 1px dashed;
+    }
+}
+
+.badge-text {
+    font-weight: $font-medium;
+    font-size: 18px;
+    line-height: 28px;
+    color: $color-paragraph;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.f-list-two {
+    margin-top: 64px;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .feature-set {
+        padding-top: 120px;
+    }
+    
+    .feature-set-three {
+        width: 66.6%;
+        padding-bottom: 116px;
+
+        .badge-text {
+            width: 66%;
+        }
+    }
+
+    .f-list-two {
+        flex-wrap: wrap;
+        
+        .list-item {
+            width: 43.2%;
+
+            &:nth-child(1), &:nth-child(2) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .badge-item {
+        margin-top: 58px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .feature-set {
+        padding-top: 109px;
+    }
+
+    .feature-set-one {
+        width: 85.2%;
+    }
+
+    .feature-set-two {
+        width: 93.75%;
+    }
+
+    .feature-set-three {
+        width: 85.2%;
+        padding-bottom: 124px;
+
+        .badge-text {
+            width: 66%;
+        }
+    }
+
+    .f-list-two {
+        flex-wrap: wrap;
+        
+        .list-item {
+            width: 45%;
+
+            &:nth-child(1), &:nth-child(2) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .badge-item {
+        margin-top: 64px;
+    }
+
+    .badge-content {
+        width: 47.2%
+    }
+
+    .badge-img {
+        width: 45%
+    }
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    .feature-set {
+        padding-top: 80px;
+    }
+
+    .feature-set-one {
+        width: 87.2%;
+    }
+
+    .feature-set-two {
+        width: 87.2%;
+    }
+
+    .feature-set-three {
+        width: 78.6%;
+        padding-bottom: 112px;
+
+        .badge-text {
+            width: 100%;
+        }
+    }
+
+    .feature-list {
+        margin-top: 40px;
+    }
+
+    .f-list-one {
+        flex-direction: column;
+
+        .list-item {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 36px;
+            width: 100%;
+        }
+    }
+
+    .f-list-two {
+        flex-direction: column;
+        
+        .list-item {
+            width: 100%;
+            margin-bottom: 40px;
+
+            .feature-text {
+                text-align: center;
+            }
+        }
+    }
+
+    .feature-icon {
+        margin-bottom: 0;
+        margin-right: 15px;
+        width: 60px;
+    }
+
+    .feature-text {
+        text-align: start;
+    }
+
+    .badge-item {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 48px;
+
+        .badge-content {
+            width: 100%;
+            margin-top: 24px;
+        }
+    
+        .badge-img {
+            width: 85.3%
+        }
+
+        &:nth-child(2) {
+            flex-direction: column-reverse;
+        }
+    }
+}

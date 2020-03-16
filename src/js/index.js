@@ -1,16 +1,32 @@
 import '../styles/styles.scss';
 
+// lang dropdown
 const langToggler = document.getElementById('langToggler')
 const langList = document.getElementById('langList')
 
 langToggler.addEventListener('click', () => {
-    if (langList.style.display != 'none') {
-        langList.style.display = 'none'
+    if (langList.classList.contains('list-open')) {
+        langList.classList.remove('list-open')
     } else {
-        langList.style.display = 'block'
+        langList.classList.add('list-open')
     }
-}) 
+})
 
+// other links hidden in mobile view
+const otherLinks = document.getElementById('otherLinks')
+const otherList = document.getElementById('otherList')
+
+otherLinks.addEventListener('click', (event) => {
+    event.preventDefault()
+
+    if (otherList.classList.contains('list-open')) {
+        otherList.classList.remove('list-open')
+    } else {
+        otherList.classList.add('list-open')
+    }
+})
+
+// import-export tabs
 const importTab = document.getElementById('importTab')
 const exportTab = document.getElementById('exportTab')
 const importTabContent = document.getElementById('importTabContent')
@@ -37,6 +53,7 @@ exportTab.addEventListener('click', (event) => {
     }
 })
 
+// pricing tabs
 const threeMonthTab = document.getElementById('threeMonthTab')
 const sixMonthTab = document.getElementById('sixMonthTab')
 const twelveMonthTab = document.getElementById('twelveMonthTab')
@@ -82,4 +99,3 @@ twelveMonthTab.addEventListener('click', (event) => {
     }
 
 })
-
