@@ -270,6 +270,11 @@
         .badge-content {
             width: 100%;
             margin-top: 24px;
+
+            .cta-main {
+                justify-content: center;
+                width: 100%;
+            }
         }
     
         .badge-img {

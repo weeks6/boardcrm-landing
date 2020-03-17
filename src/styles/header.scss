@@ -87,9 +87,6 @@
         align-items: center;
         text-align: center;
 
-        .cta-main {
-            margin-right: 0;
-        }
     }
 
 }
@@ -114,7 +111,8 @@
         text-align: center;
 
         .cta-main {
-            margin-right: 0;
+            justify-content: center;
+            width: 100%;
         }
     }
 

@@ -58,19 +58,19 @@ const threeMonthTab = document.getElementById('threeMonthTab')
 const sixMonthTab = document.getElementById('sixMonthTab')
 const twelveMonthTab = document.getElementById('twelveMonthTab')
 
-const threeMonthContent = document.getElementById('threeMonthContent')
-const sixMonthContent = document.getElementById('sixMonthContent')
-const twelveMonthContent = document.getElementById('twelveMonthContent')
+const threeMonthPrice = document.getElementById('threeMonthPrice')
+const sixMonthPrice = document.getElementById('sixMonthPrice')
+const twelveMonthPrice = document.getElementById('twelveMonthPrice')
 
 const pricingUnderline = document.getElementById('pricingUnderline')
 
 threeMonthTab.addEventListener('click', (event) => {
     event.preventDefault()
 
-    if (!threeMonthContent.classList.contains('tab-active')) {
-        threeMonthContent.classList.add('tab-active')
-        sixMonthContent.classList.remove('tab-active')
-        twelveMonthContent.classList.remove('tab-active')
+    if (!threeMonthPrice.classList.contains('tab-active')) {
+        threeMonthPrice.classList.add('tab-active')
+        sixMonthPrice.classList.remove('tab-active')
+        twelveMonthPrice.classList.remove('tab-active')
         pricingUnderline.style.marginLeft = '0'
     }
 
@@ -79,10 +79,10 @@ threeMonthTab.addEventListener('click', (event) => {
 sixMonthTab.addEventListener('click', (event) => {
     event.preventDefault()
 
-    if (!sixMonthContent.classList.contains('tab-active')) {
-        sixMonthContent.classList.add('tab-active')
-        threeMonthContent.classList.remove('tab-active')
-        twelveMonthContent.classList.remove('tab-active')
+    if (!sixMonthPrice.classList.contains('tab-active')) {
+        sixMonthPrice.classList.add('tab-active')
+        threeMonthPrice.classList.remove('tab-active')
+        twelveMonthPrice.classList.remove('tab-active')
         pricingUnderline.style.marginLeft = '33.3%'
     }
 
@@ -91,10 +91,10 @@ sixMonthTab.addEventListener('click', (event) => {
 twelveMonthTab.addEventListener('click', (event) => {
     event.preventDefault()
 
-    if (!twelveMonthContent.classList.contains('tab-active')) {
-        twelveMonthContent.classList.add('tab-active')
-        threeMonthContent.classList.remove('tab-active')
-        sixMonthContent.classList.remove('tab-active')
+    if (!twelveMonthPrice.classList.contains('tab-active')) {
+        twelveMonthPrice.classList.add('tab-active')
+        threeMonthPrice.classList.remove('tab-active')
+        sixMonthPrice.classList.remove('tab-active')
         pricingUnderline.style.marginLeft = '66.6%'
     }
 

@@ -7,29 +7,32 @@
 }
 
 .pricing-content {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    & h2 {
-        margin-bottom: 56px;
-    }
 }
 
 .tab-content-wrapper {
     display: flex;
+    justify-content: space-between;
+}
+
+.pledge-card-content {
+    width: 53.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
 }
 
 .pledge-card {
-    margin: 0 24px;
+    width: 48.4%;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     & .cta-main, & .cta-secondary {
-        margin-left: 155px;
-        margin-right: 155px;
         margin-top: 48px;
         margin-bottom: 80px;
     }
@@ -86,9 +89,15 @@
 }
 
 .pricing-tabs {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 56px;
+
+    .tab-content {
+        width: 100%;
+    }
 }
 
 .pricing-tabs__links {
@@ -104,22 +113,22 @@
     text-align: center;
     color: $color-heading;
 
-    &:nth-child(2)::after {
+    &:nth-child(2)::before {
         background: #FCCBBB;
-        border-radius: 18px;    
+        border-radius: 18px;
+        width: 52px;
         position: relative;
-        margin-left: 80%;
-        margin-top: -32%;
+        left: 80%;
         content: '-20%';
         display: block;
     }
 
-    &:nth-child(3)::after {
+    &:nth-child(3)::before {
         background: #FCCBBB;
-        border-radius: 18px;    
+        border-radius: 18px;
+        width: 52px;
         position: relative;
-        margin-left: 80%;
-        margin-top: -32%;
+        left: 80%;
         content: '-30%';
         display: block;
     }
@@ -158,9 +167,84 @@
 .pricing__tab {
     display: inline-block;
     text-align: center;
-    height: 44px;
     border-bottom: #EDEDF1 4px solid;
-    flex: 1;
     flex-shrink: 0;
-    flex-basis: 33%;
+    flex-basis: 33.3%;
+
+    &.one .tab-link {
+        padding-top: 24px;
+    }
+}
+
+#threeMonthPrice, #sixMonthPrice, #twelveMonthPrice {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .pricing-tabs__links {
+        width: 62.5%;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .pledge-card-content {
+        width: 72.3%;
+    }
+
+    .pricing-tabs__links {
+        width: 83.3%
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    #pricing {
+        padding-bottom: 100px;
+    }
+
+    .tab-content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .pricing-tabs__links {
+        width: 100%;
+    }
+
+    .pledge-card {
+        width: 100%;
+
+        &:last-child {
+            margin-top: 24px;
+        }
+
+        .cta-main, .cta-secondary {
+            height: 48px;
+        }
+    }
+
+    .pledge-card-content {
+        width: 75.2%;
+    }
+
+    .pricing-tabs {
+        margin-top: 69px;
+    }
+
+    .tab-discount {
+
+        &:nth-child(2)::before {
+            width: 48px;
+            left: 30%;
+            
+        }
+    
+        &:nth-child(3)::before {
+            width: 48px;
+            left: 30%;
+        }
+    }
 }

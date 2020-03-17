@@ -57,7 +57,7 @@
         left: 48.61%;
         right: 28.67%;
         margin-top: 113px;
-        width: 327.17px;
+        width: 329px;
         height: 531.36px;
         background-image: url('../assets/fb-woman.svg');
     }
@@ -149,10 +149,6 @@
             width: 100%;
         }
 
-        .cta-main {
-            margin-right: 0;
-        }
-
         .cone-icon {
             display: none;
         }
@@ -161,13 +157,11 @@
     .form-body {
 
         &:before {
-            left: 17.58%;
-            right: 50.47%;
+            transform: translate(-310px, 40px);
         }
     
         &:after {
-            left: 46.19%;
-            right: 17.22%;
+            transform: translate(-220px, 38px);
         }
     }
 }
@@ -197,10 +191,6 @@
 
         .badge-text {
             width: 100%;
-        }
-
-        .cta-main {
-            margin-right: 0;
         }
 
         .cone-icon {
@@ -251,9 +241,10 @@
                 width: 100%;
                 text-align: center;
             }
-    
+
             .cta-main {
-                margin-right: 0;
+                justify-content: center;
+                width: 85.3%;
             }
         }
     

@@ -31,53 +31,43 @@ $font-bold: 700;
 
 .cta-main {
     width: max-content;
-    margin-right: 24px;
+    display: inline-flex;
+    align-items: center;
     height: 56px;
+    padding: 0 24px;
     background-color: $color-accent;
     border-radius: 4px;
+    
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    font-weight: $font-medium;
+    text-decoration: none;
 
     &:hover {
         background-color: $color-accent-darken;
     }
-}
-
-.cta-main-link {
-    display: inline-flex;
-    align-items: center;
-    font-size: 16px;
-    padding: 0 24px;
-    color: #fff;
-    font-weight: $font-medium;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
 }
 
 .cta-secondary {
     width: max-content;
+    display: inline-flex;
+    align-items: center;
     height: 56px;
+    padding: 0 24px;
     border: 2px $color-accent solid;
     border-radius: 4px;
 
-    &:hover {
-        background-color: $color-accent-darken;
-    }
-
-    &:hover > .cta-secondary-link {
-        color: #fff
-    }
-}
-
-.cta-secondary-link {
-    display: inline-flex;
-    align-items: center;
     font-size: 16px;
-    padding: 0 24px;
+    line-height: 22px;
     color: $color-accent;
     font-weight: $font-medium;
     text-decoration: none;
-    width: 100%;
-    height: 100%;
+
+    &:hover {
+        background-color: $color-accent;
+        color: #fff
+    }
 }
 
 h1 {
@@ -138,12 +128,16 @@ h3 {
     h2 {
         width: 94%;
     }
+
+    .cta-main {
+        padding: 0 32px;
+    }
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
 
     .container {
-        width: 91.47%
+        width: 87.2%;
     }
 
     h1 {
@@ -156,16 +150,5 @@ h3 {
         width: 89%;
         font-size: 32px;
         line-height: 40px;
-    }
-
-    .cta-main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
-    .cta-main-link {
-        width: auto;
     }
 }
